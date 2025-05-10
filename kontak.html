@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kontak - Xray Corporation</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: 'Poppins', sans-serif;
+        background-color: #121212;
+        color: #e0e0e0;
+      }
+
+      header {
+        background: linear-gradient(to right, #1f1f1f, #2c2c2c);
+        padding: 60px 20px;
+        text-align: center;
+      }
+
+      header h1 {
+        font-size: 2.8em;
+        margin-bottom: 10px;
+        color: #ffffff;
+      }
+
+      header p {
+        font-size: 1.2em;
+        color: #cccccc;
+      }
+
+      nav {
+        background-color: #1a1a1a;
+        display: flex;
+        justify-content: center;
+        gap: 30px;
+        padding: 15px 0;
+        position: sticky;
+        top: 0;
+        z-index: 10;
+        border-bottom: 1px solid #333;
+      }
+
+      nav a {
+        color: #cccccc;
+        text-decoration: none;
+        font-weight: 500;
+        padding: 8px 16px;
+        border-radius: 4px;
+        transition: all 0.3s ease;
+      }
+
+      nav a:hover {
+        background-color: #333;
+        color: #ffffff;
+      }
+
+      .contact-section {
+        background: radial-gradient(circle, #1f1f1f, #121212);
+        padding: 80px 20px;
+      }
+
+      .contact-section h2 {
+        text-align: center;
+        font-size: 2em;
+        margin-bottom: 40px;
+        color: #ffffff;
+      }
+
+      .contact-container {
+        max-width: 1000px;
+        margin: 0 auto;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 40px;
+      }
+
+      .contact-form,
+      .contact-info {
+        flex: 1;
+        min-width: 280px;
+      }
+
+      .contact-form input,
+      .contact-form textarea {
+        width: 100%;
+        background-color: #1e1e1e;
+        border: 1px solid #444;
+        padding: 15px;
+        margin-bottom: 20px;
+        color: #e0e0e0;
+        border-radius: 6px;
+      }
+
+      .contact-form input::placeholder,
+      .contact-form textarea::placeholder {
+        color: #aaa;
+      }
+
+      .contact-form button {
+        background-color: #03a9f4;
+        color: #fff;
+        border: none;
+        padding: 12px 24px;
+        font-weight: 500;
+        border-radius: 30px;
+        cursor: pointer;
+        transition: background 0.3s ease;
+      }
+
+      .contact-form button:hover {
+        background-color: #0288d1;
+      }
+
+      .contact-info {
+        background-color: #1a1a1a;
+        padding: 30px;
+        border-radius: 12px;
+        box-shadow: 0 2px 12px rgba(0, 0, 0, 0.2);
+      }
+
+      .contact-info p {
+        margin: 12px 0;
+        color: #cccccc;
+      }
+
+      .contact-info strong {
+        color: #ffffff;
+      }
+
+      .contact-info .icon {
+        margin-right: 10px;
+        color: #03a9f4;
+      }
+
+      footer {
+        text-align: center;
+        padding: 20px;
+        background-color: #111;
+        color: #777;
+        font-size: 0.9em;
+      }
+
+      @media (max-width: 768px) {
+        .contact-container {
+          flex-direction: column;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Kontak Kami</h1>
+      <p>Kami siap membantu Anda. Silakan hubungi kami kapan saja!</p>
+    </header>
+
+    <nav>
+      <a href="index.html">Beranda</a>
+      <a href="tentang.html">Tentang Kami</a>
+      <a href="layanan.html">Layanan</a>
+      <a href="portofolio.html">Portofolio</a>
+      <a href="kontak.html">Kontak</a>
+    </nav>
+
+    <section class="contact-section">
+      <h2>Hubungi Kami</h2>
+      <div class="contact-container">
+        <div class="contact-form">
+          <input type="text" placeholder="Nama" required />
+          <input type="email" placeholder="E-mail" required />
+          <input type="text" placeholder="Subjek" />
+          <textarea rows="6" placeholder="Pesan Anda..." required></textarea>
+          <button type="submit">KIRIM</button>
+        </div>
+        <div class="contact-info">
+  <p><span class="icon">🏢</span> <strong>Xray Corporation</strong></p>
+  <p><span class="icon">📞</span> +62 898-9136-001</p>
+  <p><span class="icon">✉️</span> info@xraycorp.id</p>
+  <p><span class="icon">📍</span> Sleman, Yogyakarta, Indonesia</p>
+
+  <div style="margin-top: 30px;">
+    <p><strong>Ikuti Kami:</strong></p>
+    <p style="margin-top: 10px;">
+      <a href="https://instagram.com/synthcode_dynasty" target="_blank" style="color:#e0e0e0; text-decoration:none; margin-right:15px;">
+        <i class="fab fa-instagram"></i> Instagram
+      </a>
+      <a href="https://github.com/xraycorp" target="_blank" style="color:#e0e0e0; text-decoration:none; margin-right:15px;">
+        <i class="fab fa-github"></i> GitHub
+      </a>
+      <a href="davidstanley230404@gmail.com" style="color:#e0e0e0; text-decoration:none;">
+        <i class="fas fa-envelope"></i> Email
+      </a>
+    </p>
+  </div>
+</div>
+
+    </section>
+
+    <footer>&copy; 2025 Xray Corporation. All rights reserved.</footer>
+  </body>
+</html>

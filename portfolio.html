@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portofolio Trader - Xray Corporation</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet" />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: 'Poppins', sans-serif;
+        background-color: #121212;
+        color: #e0e0e0;
+      }
+
+      header {
+        background: linear-gradient(to right, #1f1f1f, #2c2c2c);
+        padding: 60px 20px;
+        text-align: center;
+      }
+
+      header h1 {
+        font-size: 2.5em;
+        margin-bottom: 10px;
+        color: #ffffff;
+      }
+
+      header p {
+        color: #cccccc;
+        font-size: 1.1em;
+      }
+
+      nav {
+        background-color: #1a1a1a;
+        display: flex;
+        justify-content: center;
+        gap: 25px;
+        padding: 15px 0;
+        border-bottom: 1px solid #333;
+        position: sticky;
+        top: 0;
+        z-index: 10;
+      }
+
+      nav a {
+        color: #cccccc;
+        text-decoration: none;
+        font-weight: 500;
+        padding: 8px 16px;
+        border-radius: 4px;
+        transition: background 0.3s ease;
+      }
+
+      nav a:hover {
+        background-color: #333;
+        color: #fff;
+      }
+
+      .container {
+        max-width: 1000px;
+        margin: 40px auto;
+        padding: 20px;
+        background-color: #1e1e1e;
+        border-radius: 10px;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+      }
+
+      .profile {
+        display: flex;
+        gap: 20px;
+        align-items: center;
+        margin-bottom: 30px;
+      }
+
+      .profile img {
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        object-fit: cover;
+        border: 2px solid #444;
+      }
+
+      .profile-info h2 {
+        font-size: 1.5em;
+        color: #ffffff;
+      }
+
+      .profile-stats {
+        display: flex;
+        gap: 15px;
+        font-size: 0.9em;
+        color: #bbbbbb;
+        margin-top: 6px;
+      }
+
+      .description {
+        margin-bottom: 30px;
+        line-height: 1.6;
+        color: #cccccc;
+      }
+
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        font-size: 0.95em;
+      }
+
+      th,
+      td {
+        padding: 12px;
+        border: 1px solid #333;
+        text-align: center;
+      }
+
+      th {
+        background-color: #2a2a2a;
+        color: #eeeeee;
+      }
+
+      td {
+        background-color: #181818;
+      }
+
+      .positive {
+        color: #4caf50;
+        font-weight: 600;
+      }
+
+      .negative {
+        color: #f44336;
+        font-weight: 600;
+      }
+
+      footer {
+        text-align: center;
+        padding: 20px;
+        background-color: #111;
+        color: #777;
+        font-size: 0.9em;
+        margin-top: 60px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Portofolio Trader</h1>
+      <p>Detail Riwayat Trading & Statistik Akun</p>
+    </header>
+
+    <nav>
+      <a href="index.html">Beranda</a>
+      <a href="tentang.html">Tentang Kami</a>
+      <a href="layanan.html">Layanan</a>
+      <a href="portofolio.html">Portofolio</a>
+      <a href="kontak.html">Kontak</a>
+    </nav>
+
+    <section class="container">
+      <div class="profile">
+        <img src="profiletrader.jpg" alt="Trader Profile" />
+        <div class="profile-info">
+          <h2>David Stanley</h2>
+          <div class="profile-stats">
+            <span><strong>Follower:</strong> 10M</span>
+            <span><strong>Profit:</strong> 12%</span>
+            <span><strong>Draw Down:</strong> 19.79%</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="description">
+        <strong>Deskripsi Trading:</strong><br />
+        Silakan follow/copy trading saya. Maksimal kerugian saya dalam sekali transaksi sebesar 5% dari modal saya. Silakan atur sendiri money manajemen anda.
+      </div>
+
+      <table>
+        <thead>
+          <tr>
+            <th>Currency</th>
+            <th>Type</th>
+            <th>Lots</th>
+            <th>Date Open</th>
+            <th>Date Close</th>
+            <th>Open/Close</th>
+            <th>Profit</th>
+            <th>Total</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>GBPJPY</td>
+            <td>Buy</td>
+            <td>0.40</td>
+            <td>07/31/2018 05:27</td>
+            <td>07/31/2018 09:33</td>
+            <td>145.712 / 146.129</td>
+            <td class="positive">+41.7 pips</td>
+            <td>USD 147.03</td>
+          </tr>
+          <tr>
+            <td>EURCHF</td>
+            <td>Sell</td>
+            <td>0.02</td>
+            <td>06/13/2018 06:30</td>
+            <td>07/31/2018 05:27</td>
+            <td>1.15977 / 1.15649</td>
+            <td class="positive">+32.8 pips</td>
+            <td>USD 4.1</td>
+          </tr>
+          <tr>
+            <td>GBPAUD</td>
+            <td>Sell</td>
+            <td>0.03</td>
+            <td>06/25/2018 10:23</td>
+            <td>07/18/2018 18:47</td>
+            <td>1.78088 / 1.76608</td>
+            <td class="positive">+148 pips</td>
+            <td>USD 35.5</td>
+          </tr>
+          <tr>
+            <td>AUDJPY</td>
+            <td>Sell</td>
+            <td>0.05</td>
+            <td>06/25/2018 10:11</td>
+            <td>07/06/2018 15:30</td>
+            <td>81.264 / 82.141</td>
+            <td class="negative">-87.7 pips</td>
+            <td>USD -4.39</td>
+          </tr>
+          <tr>
+            <td>NZDCHF</td>
+            <td>Buy</td>
+            <td>0.15</td>
+            <td>07/02/2018 09:40</td>
+            <td>07/02/2018 20:28</td>
+            <td>0.67226 / 0.66948</td>
+            <td class="negative">-27.8 pips</td>
+            <td>USD -3.78</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <footer>&copy; 2025 Xray Corporation. All rights reserved.</footer>
+  </body>
+</html>
